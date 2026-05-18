@@ -14,7 +14,7 @@ export const projects = [
         categories: ['software', 'data'],
         description: `A comprehensive Cherokee language app built in React for web and mobile, using lexical data compiled from various sources.
 <ul class="list-disc pl-4 mt-2 space-y-1">
-<li>Dictionary with multiple sources (<a href="https://cherokeenationdictionary.net/">CED</a>, <a href="https://www.cherokeedictionary.net/">online dictionary</a>, etc), <a href="">root-word integration</a> and audio for CED, and robust search options.</li>
+<li>Dictionary with multiple sources (<a href="https://cherokeenationdictionary.net/">CED</a>, <a href="https://www.cherokeedictionary.net/">online dictionary</a>, etc), <a href="https://github.com/CharlieMcVicker/king-recreation">root-word integration</a> and audio for CED, and robust search options.</li>
 <li>Tools to create custom dictionaries, conjugations, audio, sentences, etc.</li>
 <li>Feature-rich full text reader with glossing. Link words to dictionary entries and create word-level notes in context.</li>
 <li>Import/Export for custom packages (words/sentences/glosses/audio/etc) with color coding for package management.</li>
@@ -52,7 +52,7 @@ export const projects = [
         year: '2023',
         subtitle: 'C#, Unity • Language, Mobile, Web',
         categories: ['software', 'data'],
-        description: `I created Learn Cherokee Syllabary as a free mobile app to help learners teach themselves to read and write the Cherokee Syllabary. 
+        description: `I created <a href="https://play.google.com/store/apps/details?id=com.LilyBelmira.LearnCherokeeSyllabary&hl=en_US">Learn Cherokee Syllabary</a> as a free mobile app to help learners teach themselves to read and write the Cherokee Syllabary. 
 <ul class="list-disc pl-4 mt-2 space-y-1">
 <li>App includes a tracing mode for learning the shapes of syllabary symbols and corresponding phonetic representations, and a reading mode for interpreting characters into phonetics.</li>
 <li>Learners can test their knowledge by drawing the syllabary characters with phonetic prompts and get feedback on their progress.</li>
