@@ -8,12 +8,13 @@ export const projects = [
     {
         id: 'cherokee-dictionary-app',
         title: 'Cherokee Dictionary and Corpus App',
+        link: 'https://github.com/lily-bel/cherokee-corpus-app',
         year: '2024-2026',
         subtitle: 'React, JS, HTML • Web, Mobile, Data, Language',
         categories: ['software', 'data'],
         description: `A comprehensive Cherokee language app built in React for web and mobile, using lexical data compiled from various sources.
 <ul class="list-disc pl-4 mt-2 space-y-1">
-<li>Dictionary with multiple sources (CED, online dictionary, etc), root-word integration and audio for CED, and robust search options.</li>
+<li>Dictionary with multiple sources (<a href="https://cherokeenationdictionary.net/">CED</a>, <a href="https://www.cherokeedictionary.net/">online dictionary</a>, etc), <a href="">root-word integration</a> and audio for CED, and robust search options.</li>
 <li>Tools to create custom dictionaries, conjugations, audio, sentences, etc.</li>
 <li>Feature-rich full text reader with glossing. Link words to dictionary entries and create word-level notes in context.</li>
 <li>Import/Export for custom packages (words/sentences/glosses/audio/etc) with color coding for package management.</li>
@@ -27,35 +28,15 @@ export const projects = [
         ]
     },
     {
-        id: 'learn-cherokee-syllabary',
-        title: 'Learn Cherokee Syllabary',
-        year: '2023',
-        subtitle: 'C#, Unity • Language, Mobile, Web',
-        categories: ['software', 'data'],
-        description: `I created Learn Cherokee Syllabary as a free mobile app to help learners teach themselves to read and write the Cherokee Syllabary. 
-<ul class="list-disc pl-4 mt-2 space-y-1">
-<li>App includes a tracing mode for learning the shapes of syllabary symbols and corresponding phonetic representations, and a reading mode for interpreting characters into phonetics.</li>
-<li>Learners can test their knowledge by drawing the syllabary characters with phonetic prompts and get feedback on their progress.</li>
-<li>Drawing success is self-rated to allow for different family and community character variations.</li>
-<li>This app can be used by both Cherokee learners and Speakers who cannot write in syllabary, and is ideal for technology-integrated educational environments.</li>
-<li>The app has 2000+ installs on Android and iOS devices. The app is created using Unity + C#.</li>
-</ul>`,
-        images: [
-            './images/syllabary1.jpg',
-            './images/syllabary2.jpg',
-            './images/syllabary3.jpg',
-            './images/syllabary4.jpg'
-        ]
-    },
-    {
         id: '2d-gaussian-splatting-shader',
         title: '2D Gaussian Splatting Shader',
+        link: 'https://github.com/lily-bel/Painterly-2DGS-For-Unity',
         year: '2026',
         subtitle: 'ShaderLab, C# • Unity, Game Development',
         categories: ['xr', 'software'],
-        description: `A fast 2D Gaussian Splatting render implementation for Unity with brushstroke texture options.
+        description: `A fast <a href="https://surfsplatting.github.io/">2D Gaussian Splatting</a> render implementation for Unity with brushstroke texture options.
 <ul class="list-disc pl-4 mt-2 space-y-1">
-<li>ShaderLab materials for rendering point clouds with 2x2 atlas or single texture options.</li>
+<li>ShaderLab materials for rendering point clouds with 2x2 texture atlas and single texture options.</li>
 <li>Uses dithering to avoid transparency sorting issues and improve performance.</li>
 <li>Custom mipmapping editor tools for fine adjustments to brushstroke / gaussian textures.</li>
 </ul>`,
@@ -65,8 +46,50 @@ export const projects = [
         wideImages: true
     },
     {
+        id: 'learn-cherokee-syllabary',
+        title: 'Learn Cherokee Syllabary',
+        link: 'https://play.google.com/store/apps/details?id=com.LilyBelmira.LearnCherokeeSyllabary&hl=en_US',
+        year: '2023',
+        subtitle: 'C#, Unity • Language, Mobile, Web',
+        categories: ['software', 'data'],
+        description: `I created Learn Cherokee Syllabary as a free mobile app to help learners teach themselves to read and write the Cherokee Syllabary. 
+<ul class="list-disc pl-4 mt-2 space-y-1">
+<li>App includes a tracing mode for learning the shapes of syllabary symbols and corresponding phonetic representations, and a reading mode for interpreting characters into phonetics.</li>
+<li>Learners can test their knowledge by drawing the syllabary characters with phonetic prompts and get feedback on their progress.</li>
+<li>Drawing success is self-rated to allow for different family and community character variations.</li>
+<li>This app can be used by both Cherokee learners and Speakers who cannot write in syllabary, and is ideal for technology-integrated educational environments.</li>
+<li>The app has 2000+ installs on Android and iOS devices. The app was originally created using Unity + C#, and has now switched over to React.</li>
+</ul>`,
+        images: [
+            './images/syllabary1.jpg',
+            './images/syllabary2.jpg',
+            './images/syllabary3.jpg',
+            './images/syllabary4.jpg'
+        ]
+    },
+    {
+        id: 'cherokee-language-resources',
+        title: 'Cherokee Language Learning and Access Resources',
+        year: '2022 - PRESENT',
+        subtitle: 'Python, JS • Language, Data',
+        categories: ['software', 'data'],
+        description: `I’ve completed and initiated several other projects to improve access to Cherokee learning resources and assist learners, including myself, in rapidly acquiring technically and linguistically complex aspects of the language. 
+<ul class="list-disc pl-4 mt-2 space-y-1">
+<li>Created downloadable, multimedia <a href="https://drive.google.com/drive/folders/18DiLX00MYoS9xawvgVy3vEQt0V411Zah">flashcards</a> utilizing Wyman Kirk’s verb conjugation book + CED sentence examples, using Python libraries and manual processing to generate English conjugations for 9000+ conjugations of 400+ verbs with tense and person.</li>
+<li>Created a <a href="">Cherokee Dictionary bot</a> for Discord, and a <a href="https://cherokee.neocities.org/dictionary">simple website</a> to host the dictionary before working on the full dictionary app.</li>
+<li>Converted Cherokee reference materials into <a href="https://drive.google.com/drive/folders/18DiLX00MYoS9xawvgVy3vEQt0V411Zah">workable spreadsheets</a> for use in future projects.</li>
+</ul>`,
+        images: [
+            './images/resources2.jpg',
+            './images/resources1.jpg',
+            './images/resources3.jpg',
+            './images/resources4.jpg'
+        ]
+    },
+    {
         id: 'cowspotting',
         title: 'Cowspotting',
+        link: 'https://github.com/lily-bel/cowspotting',
         year: '2026',
         subtitle: 'React, JS, HTML • Web, Mobile, Data',
         categories: ['software', 'data'],
@@ -82,33 +105,13 @@ export const projects = [
         ]
     },
     {
-        id: 'cherokee-language-resources',
-        title: 'Cherokee Language Learning and Access Resources',
-        year: '2022 - PRESENT',
-        subtitle: 'Python, JS • Language, Data',
-        categories: ['software', 'data'],
-        description: `I’ve completed and initiated several other projects to improve access to Cherokee learning resources and assist learners, including myself, in rapidly acquiring technically and linguistically complex aspects of the language. 
-<ul class="list-disc pl-4 mt-2 space-y-1">
-<li>Created downloadable, multimedia flashcards utilizing Wyman Kirk’s verb conjugation book, using Python libraries and manual processing to generate English conjugations for 9000+ words representing 400+ verbs with tense and person.</li>
-<li>Matched sentences examples from the Cherokee English Dictionary to each flashcard entry for a comprehensive learning experience. This work is digitally available as CSVs for a variety of future projects including conversion into standalone apps or websites, depending on the needs of Cherokee Learners.</li>
-<li>Created a website to host a clean & simplified Cherokee Dictionary search. Crafted an algorithm focused on the traits of the Cherokee language specifically to improve the accuracy of the searches.</li>
-<li>Created a Cherokee Dictionary bot for use on the popular chat app Discord.</li>
-<li>Converted Cherokee reference materials into workable spreadsheets for use in future projects.</li>
-</ul>`,
-        images: [
-            './images/resources1.jpg',
-            './images/resources2.jpg',
-            './images/resources3.jpg',
-            './images/resources4.jpg'
-        ]
-    },
-    {
         id: 'arch-virtual',
         title: 'Arch Virtual – Unity Developer',
+        link: 'https://acadicus.com/',
         year: 'SEPTEMBER 2021 - MAY 2024',
         subtitle: 'C# • XR, Unity',
         categories: ['xr', 'software'],
-        description: `I worked at Acadicus for more than two years developing interactive technical simulations for a Virtual Reality (VR) medical education platform. 
+        description: `I worked at <a href="https://acadicus.com/">Arch Virtual / Acadicus</a> for more than two years developing interactive technical simulations for a Virtual Reality (VR) medical education platform. 
 <ul class="list-disc pl-4 mt-2 space-y-1">
 <li>Simulations were created in Unity in Playmaker for solo and multiplayer online use.</li>
 <li>Led multiple full-time projects in an Agile workflow, creating timelines, coordinating with artists and QA testers, and responding to feedback from clients.</li>
@@ -125,10 +128,11 @@ export const projects = [
     {
         id: 'spellbound-ar',
         title: 'Spellbound AR',
+        link: 'https://www.spellboundar.com/',
         year: 'JUNE 2019 - FEBRUARY 2021',
         subtitle: 'C# • XR, Mobile, Unity',
         categories: ['xr', 'software'],
-        description: `At SpellBound I worked creating Augmented Reality (AR) experiences in Unity to aid hospital teams in treating patients, with a focus on pediatrics. 
+        description: `At <a href="https://www.spellboundar.com/">SpellBound</a> I worked creating Augmented Reality (AR) experiences in Unity to aid hospital teams in treating patients, with a focus on pediatrics. 
 <ul class="list-disc pl-4 mt-2 space-y-1">
 <li>Created an AR interactive mural for display at New York-Presbyterian Hospital.</li>
 <li>Worked on ARISE, an AR scavenger hunt adventure game for use on Android or iOS, made to encourage pediatric patient mobility after injury or illness.</li>
