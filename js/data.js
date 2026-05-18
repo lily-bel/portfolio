@@ -14,7 +14,7 @@ export const projects = [
         categories: ['software', 'data'],
         description: `A comprehensive Cherokee language app built in React for web and mobile, using lexical data compiled from various sources.
 <ul class="list-disc pl-4 mt-2 space-y-1">
-<li>Dictionary with multiple sources (<a href="https://cherokeenationdictionary.net/">CED</a>, <a href="https://www.cherokeedictionary.net/">online dictionary</a>, etc), <a href="https://github.com/CharlieMcVicker/king-recreation">root-word integration</a> and audio for CED, and robust search options.</li>
+<li>Dictionary with multiple sources (<a href="https://cherokeenationdictionary.net/">CED</a>, <a href="https://www.cherokeedictionary.net/">online dictionary</a>, etc), root-word integration and audio for CED, and robust search options.</li>
 <li>Tools to create custom dictionaries, conjugations, audio, sentences, etc.</li>
 <li>Feature-rich full text reader with glossing. Link words to dictionary entries and create word-level notes in context.</li>
 <li>Import/Export for custom packages (words/sentences/glosses/audio/etc) with color coding for package management.</li>
