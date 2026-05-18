@@ -48,6 +48,23 @@ export const projects = [
         ]
     },
     {
+        id: '2d-gaussian-splatting-shader',
+        title: '2D Gaussian Splatting Shader',
+        year: '2026',
+        subtitle: 'ShaderLab, C# • Unity, Game Development',
+        categories: ['xr', 'software'],
+        description: `A fast 2D Gaussian Splatting render implementation for Unity with brushstroke texture options.
+<ul class="list-disc pl-4 mt-2 space-y-1">
+<li>ShaderLab materials for rendering point clouds with 2x2 atlas or single texture options.</li>
+<li>Uses dithering to avoid transparency sorting issues and improve performance.</li>
+<li>Custom mipmapping editor tools for fine adjustments to brushstroke / gaussian textures.</li>
+</ul>`,
+        images: [
+            './images/2dgs.gif'
+        ],
+        wideImages: true
+    },
+    {
         id: 'cowspotting',
         title: 'Cowspotting',
         year: '2026',
@@ -144,22 +161,5 @@ export const projects = [
             './images/games3.jpg',
             './images/games4.jpg'
         ]
-    },
-    {
-        id: '2d-gaussian-splatting-shader',
-        title: '2D Gaussian Splatting Shader',
-        year: '2026',
-        subtitle: 'ShaderLab, C# • Unity, Game Development',
-        categories: ['xr', 'software'],
-        description: `A fast 2D Gaussian Splatting render implementation for Unity with brushstroke texture options.
-<ul class="list-disc pl-4 mt-2 space-y-1">
-<li>ShaderLab materials for rendering point clouds with 2x2 atlas or single texture options.</li>
-<li>Uses dithering to avoid transparency sorting issues and improve performance.</li>
-<li>Custom mipmapping editor tools for fine adjustments to brushstroke / gaussian textures.</li>
-</ul>`,
-        images: [
-            './images/2dgs.gif'
-        ],
-        wideImages: true
     }
 ];
