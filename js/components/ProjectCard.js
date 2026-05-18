@@ -13,11 +13,15 @@ export function ProjectCard(project, index) {
     const animationDelay = 0.1 + (index * 0.1);
     const galleryId = `gallery-${project.id}`;
 
+    const titleContent = project.link 
+        ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer" class="hover:underline decoration-1 underline-offset-4 text-inherit">${project.title}</a>`
+        : project.title;
+
     return `
         <article class="mb-12 fade-enter" style="animation-delay: ${animationDelay}s; opacity: 0;">
             <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2 gap-x-4 gap-y-1">
                 <div class="flex flex-col sm:flex-row sm:items-baseline gap-x-3 gap-y-0.5">
-                    <h2 class="text-xl md:text-2xl font-lora font-medium tracking-tight text-charcoal">${project.title}</h2>
+                    <h2 class="text-xl md:text-2xl font-lora font-medium tracking-tight text-charcoal">${titleContent}</h2>
                     <span class="font-sans text-[10px] sm:text-xs font-normal text-charcoal/40 uppercase tracking-wider">${project.year}</span>
                 </div>
                 <p class="text-[10px] text-charcoal/60 uppercase tracking-wide font-medium text-left sm:text-right shrink-0">${project.subtitle}</p>
@@ -26,7 +30,7 @@ export function ProjectCard(project, index) {
             <div class="flex flex-col md:flex-row gap-6 border-t border-charcoal/20 pt-4 items-start">
                 <!-- Text Column -->
                 <div class="md:w-5/12 shrink-0">
-                    <div class="text-xs leading-relaxed font-light text-justify text-charcoal/80">
+                    <div class="project-description text-xs leading-relaxed font-light text-justify text-charcoal/80">
                         ${project.description}
                     </div>
                 </div>

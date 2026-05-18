@@ -22,3 +22,16 @@
         transform: translateY(0); 
     }
 }
+
+/* Project Description Links */
+.project-description a {
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-description a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
