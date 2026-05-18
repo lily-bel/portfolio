@@ -13,16 +13,21 @@ export function ProjectCard(project, index) {
     const animationDelay = 0.1 + (index * 0.1);
     const galleryId = `gallery-${project.id}`;
 
-    const titleContent = project.link 
-        ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer" class="hover:underline decoration-1 underline-offset-4 text-inherit">${project.title}</a>`
-        : project.title;
+    const externalLinkHtml = project.link 
+        ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer" class="text-[9px] font-bold uppercase tracking-wider text-charcoal/40 hover:text-charcoal hover:underline decoration-1 underline-offset-2 transition-colors leading-none mt-0.5 inline-block">
+            ${project.link.includes('github.com') ? 'See on Github' : 'See site'} &nearr;
+           </a>`
+        : '';
 
     return `
         <article class="mb-12 fade-enter" style="animation-delay: ${animationDelay}s; opacity: 0;">
             <div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2 gap-x-4 gap-y-1">
-                <div class="flex flex-col sm:flex-row sm:items-baseline gap-x-3 gap-y-0.5">
-                    <h2 class="text-xl md:text-2xl font-lora font-medium tracking-tight text-charcoal">${titleContent}</h2>
-                    <span class="font-sans text-[10px] sm:text-xs font-normal text-charcoal/40 uppercase tracking-wider">${project.year}</span>
+                <div class="flex flex-col">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline gap-x-3 gap-y-0.5">
+                        <h2 class="text-xl md:text-2xl font-lora font-medium tracking-tight text-charcoal leading-tight">${project.title}</h2>
+                        <span class="font-sans text-[10px] sm:text-xs font-normal text-charcoal/40 uppercase tracking-wider">${project.year}</span>
+                    </div>
+                    ${externalLinkHtml}
                 </div>
                 <p class="text-[10px] text-charcoal/60 uppercase tracking-wide font-medium text-left sm:text-right shrink-0">${project.subtitle}</p>
             </div>
