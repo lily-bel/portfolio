@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lily Lima | Engineering Portfolio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Configuration and Styling -->
+    <script src="./js/config.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-canvas text-charcoal font-sans antialiased selection:bg-accent selection:text-white overflow-y-scroll">
+
+    <!-- Application Root -->
+    <div id="app" class="max-w-4xl mx-auto px-4 py-4"></div>
+
+    <!-- Lightbox Modal for full-size images -->
+    <div id="lightbox" class="fixed inset-0 bg-charcoal/95 backdrop-blur-sm z-50 hidden flex items-center justify-center cursor-zoom-out p-4">
+        <img id="lightbox-img" class="max-w-full max-h-full object-contain rounded-sm shadow-2xl transition-all duration-300 transform scale-95" src="" alt="Preview">
+    </div>
+
+    <!-- Main Entry Point (Must be run via local server like VSCode Live Server to use modules) -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
